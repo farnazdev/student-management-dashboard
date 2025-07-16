@@ -1,0 +1,170 @@
+
+
+@font-face {
+    font-family: 'st1';
+    src: url('../font/Estedad-ExtraBold.woff2') format('woff'),
+    url('../font/Estedad-FD-Bold.ttf') format('true supports variations');
+    /* سایر خاصیت‌های مورد نیاز مانند font-weight و font-style */
+}
+
+
+
+.text-jus {
+    text-align: justify;
+}
+
+
+
+
+.sidebar {
+    width: 60px;
+    background-color: #343a40;
+    color: rgb(255, 255, 255);
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    z-index: 44;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+.sidebar .logo {
+    font-size: 12px;
+    padding: 1rem;
+    background-color: #23272b;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(62, 56, 56);
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #495057;
+}
+
+.sidebar ul li a .icon {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.sidebar ul li a .text {
+    display: none;
+    margin-right: 1rem;
+}
+
+.sidebar.open ul li a .text {
+    display: inline;
+}
+
+.content {
+    margin-right: 60px;
+    flex-grow: 1;
+    transition: margin-right 0.3s;
+}
+
+.content.open {
+    margin-right: 250px;
+}
+
+
+
+.menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 55;
+}
+
+.main {
+    padding: 1rem;
+
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.profile img {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar.open {
+        display: block;
+    }
+
+    .sidebar.open {
+        width: 250px;
+    }
+
+    .content {
+        margin-right: 0px;
+    }
+
+    .content.open {
+        margin-right: 0px;
+    }
+}
+
+
+
+.main-prof {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.r-prof {
+    flex: 0 0 22%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.l-prof {
+    flex: 0 0 76%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.l-prof h4 {
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+}
