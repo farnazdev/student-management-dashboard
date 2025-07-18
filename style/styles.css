@@ -20,17 +20,7 @@ body {
 }
 
 
-
-
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-weight: 500 !important;
     font-family: st1 !important;
 }
@@ -829,3 +819,15 @@ button:hover {
     
 }
 
+@media screen and (max-width: 480px) {
+    .login-form {
+        margin: 40px 15px;
+        padding: 15px;
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

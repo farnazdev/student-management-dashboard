@@ -121,6 +121,22 @@ input[type="radio"]{
     border-radius: 5px;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .question, .answer {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  .answer label {
+    display: block;
+  }
+}
+
     </style>
     
 </head>
@@ -151,8 +167,10 @@ input[type="radio"]{
             <h1>آزمون تاریخ چند گزینه ای</h1>
             <br>
             <hr>
+
             <form action="" id="quiz-form">
                 <div class="d-flex">
+                
                 <div class="question">
                     <p>1. معجم البلدان اثر کدام مورخ است ؟ </p> 
                     <br>
