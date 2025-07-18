@@ -62,15 +62,13 @@ The system can maintain logs for:
 
 Address
 
-📎 [View demo](http://farnazboroumand.ir/stDashboard)
+📎 [View on my personal site](http://farnazboroumand.ir/stDashboard)
 
 Test Account:
 Username: test
 Password: 1234
 
-Execute
-
-📎 [View](https://drive.google.com/file/d/1FSfWvOJmQpIsKHxG2Ojot4Sbc-vortMt/view?usp=sharing)
+Execute 📎 [View](https://drive.google.com/file/d/1FSfWvOJmQpIsKHxG2Ojot4Sbc-vortMt/view?usp=sharing)
 
 ---
 
